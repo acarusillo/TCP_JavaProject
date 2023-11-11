@@ -30,7 +30,6 @@ public class InventorySystem {
         displayProductsInMarkDown();
         displayProductsForMarkDown();
 
-        
     }
 
     // Section A
@@ -133,15 +132,14 @@ public class InventorySystem {
     }
 
     private static boolean isReplenishmentNeeded(Product product) {
-        // Replace this logic with your own replenishment criteria
-        // For example, check if the product quantity is below a certain threshold
+        
         return false;
     }
 
     private static void displayReplenishmentDetails(Product product) {
         System.out.println("Replenishment needed for ProductID: " + product.productId);
         System.out.println("Product Name: " + product.productName);
-        // Add other relevant details
+    
         System.out.println();
     }
 
@@ -198,7 +196,7 @@ public class InventorySystem {
         System.out.println("Product ID: " + product.productId);
         System.out.println("Product Name: " + product.productName);
         System.out.println("Expiry Date: " + formatDate(product.expiryDate));
-        // Add other relevant details
+        
         System.out.println();
     }
 
